@@ -36,7 +36,9 @@
     "build:test": "npm run build:client && npm run build:server",
     "build:production": "npm run build:production:client && npm run build:production:server",
     "hot-assets": "babel-node server-rails-hot.js",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "actioncable": "^5.0.1",
@@ -88,7 +90,8 @@
     "style-loader": "^0.13.1",
     "turbolinks": "^5.0.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -111,5 +114,6 @@
     "react-transform-hmr": "^1.0.4",
     "sleep": "^5.0.0",
     "webpack-dev-server": "^1.16.2"
-  }
+  },
+  "snyk": true
 }
