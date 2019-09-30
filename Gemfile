@@ -103,5 +103,5 @@ group :test  do
   gem "poltergeist"
   gem "rspec-rails", "~> 3"
   gem "rspec-retry"
-  gem "selenium-webdriver", "<3.0.0"
+  gem "selenium-webdriver", ">= 2.53.4", "< 3.0.0"
 end
