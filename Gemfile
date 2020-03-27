@@ -30,7 +30,7 @@ gem "jbuilder"
 gem 'redis'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", group: :doc
+gem "sdoc", ">= 1.0.0", group: :doc
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
@@ -92,10 +92,10 @@ group :development, :test do
 end
 
 group :test  do
-  gem "coveralls", require: false
+  gem "coveralls", ">= 0.8.15", require: false
   gem "capybara"
   gem "capybara-screenshot"
-  gem "capybara-webkit"
+  gem "capybara-webkit", ">= 1.11.1"
   gem "chromedriver-helper"
   gem "database_cleaner"
   gem "generator_spec"
