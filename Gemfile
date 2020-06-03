@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 5.0.1", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -100,7 +100,7 @@ group :test  do
   gem "database_cleaner"
   gem "generator_spec"
   gem "launchy"
-  gem "poltergeist"
+  gem "poltergeist", ">= 1.11.0"
   gem "rspec-rails", "~> 3"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
