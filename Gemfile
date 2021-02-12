@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 6.0.3.5", github: "rails/rails"
 gem "rails"
 gem "listen"
 
