@@ -30,7 +30,7 @@ gem "jbuilder"
 gem 'redis'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", group: :doc
+gem "sdoc", ">= 1.0.0", group: :doc
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
