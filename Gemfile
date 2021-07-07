@@ -93,14 +93,14 @@ end
 
 group :test  do
   gem "coveralls", require: false
-  gem "capybara"
-  gem "capybara-screenshot"
-  gem "capybara-webkit"
+  gem "capybara", ">= 2.7.1"
+  gem "capybara-screenshot", ">= 1.0.14"
+  gem "capybara-webkit", ">= 1.11.1"
   gem "chromedriver-helper"
   gem "database_cleaner"
   gem "generator_spec"
-  gem "launchy"
-  gem "poltergeist"
+  gem "launchy", ">= 2.4.3"
+  gem "poltergeist", ">= 1.11.0"
   gem "rspec-rails", "~> 3"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
