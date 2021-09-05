@@ -41,7 +41,7 @@
   "dependencies": {
     "actioncable": "^5.0.1",
     "autoprefixer": "^6.5.3",
-    "axios": "^0.15.2",
+    "axios": "^0.21.3",
     "babel": "^6.5.2",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
