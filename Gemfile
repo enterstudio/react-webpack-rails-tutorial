@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 5.2.7.1", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -18,7 +18,7 @@ gem "sass-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/turbolinks/turbolinks
@@ -101,7 +101,7 @@ group :test  do
   gem "generator_spec"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "rspec-rails", "~> 3", ">= 3.5.2"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
 end
