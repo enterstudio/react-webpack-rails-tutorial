@@ -36,7 +36,7 @@ gem "sdoc", group: :doc
 # gem "bcrypt", "~> 3.1.7"
 
 # Use Rails Html Sanitizer for HTML sanitization
-gem "rails-html-sanitizer"
+gem "rails-html-sanitizer", ">= 1.4.4"
 
 gem "react_on_rails", "~> 6.7.1"
 
@@ -101,7 +101,7 @@ group :test  do
   gem "generator_spec"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "rspec-rails", "~> 3", ">= 3.5.2"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
 end
