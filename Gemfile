@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 6.1.7.1", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -14,11 +14,11 @@ gem "pg"
 gem "puma"
 
 # Use SCSS for stylesheets
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.8"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/turbolinks/turbolinks
@@ -26,7 +26,7 @@ gem "coffee-rails"
 # gem 'turbolinks', '>= 5.0.0.beta2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder"
+gem "jbuilder", ">= 2.6.4"
 gem 'redis'
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -101,7 +101,7 @@ group :test  do
   gem "generator_spec"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "rspec-rails", "~> 3", ">= 3.5.2"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
 end
