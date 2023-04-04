@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 6.1.7.3", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -11,14 +11,14 @@ gem "listen"
 
 gem "pg"
 
-gem "puma"
+gem "puma", ">= 4.3.12"
 
 # Use SCSS for stylesheets
-gem "sass-rails"
+gem "sass-rails", ">= 6.0.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/turbolinks/turbolinks
@@ -26,17 +26,17 @@ gem "coffee-rails"
 # gem 'turbolinks', '>= 5.0.0.beta2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder"
+gem "jbuilder", ">= 2.6.4"
 gem 'redis'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", group: :doc
+gem "sdoc", ">= 1.0.0", group: :doc
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
 
 # Use Rails Html Sanitizer for HTML sanitization
-gem "rails-html-sanitizer"
+gem "rails-html-sanitizer", ">= 1.4.4"
 
 gem "react_on_rails", "~> 6.7.1"
 
@@ -70,10 +70,10 @@ group :development, :test do
 
   ################################################################################
   # Linters and Security
-  gem "rubocop", require: false
+  gem "rubocop", ">= 0.49.0", require: false
   gem "ruby-lint", require: false
   # Critical that require: false be set! https://github.com/brigade/scss-lint/issues/278
-  gem "scss_lint", require: false
+  gem "scss_lint", ">= 0.51.0", require: false
   gem "brakeman", require: false
   gem "bundler-audit", require: false
 
@@ -101,7 +101,7 @@ group :test  do
   gem "generator_spec"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "rspec-rails", "~> 3", ">= 3.5.2"
   gem "rspec-retry"
-  gem "selenium-webdriver", "<3.0.0"
+  gem "selenium-webdriver", ">= 2.53.4", "< 3.0.0"
 end
