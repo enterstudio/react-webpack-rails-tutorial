@@ -11,7 +11,7 @@ gem "listen"
 
 gem "pg"
 
-gem "puma"
+gem "puma", ">= 5.6.7"
 
 # Use SCSS for stylesheets
 gem "sass-rails"
