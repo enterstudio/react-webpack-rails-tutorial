@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 7.1.0", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -14,11 +14,11 @@ gem "pg"
 gem "puma"
 
 # Use SCSS for stylesheets
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.8"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/turbolinks/turbolinks
@@ -38,7 +38,7 @@ gem "sdoc", group: :doc
 # Use Rails Html Sanitizer for HTML sanitization
 gem "rails-html-sanitizer"
 
-gem "react_on_rails", "~> 6.7.1"
+gem "react_on_rails", "~> 6.7.2"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # mini_racer is probably faster than therubyracer
@@ -54,7 +54,7 @@ gem "awesome_print"
 
 group :development do
   # Access an IRB console on exceptions page and /console in development
-  gem "web-console"
+  gem "web-console", ">= 3.5.0"
 end
 
 group :development, :test do
@@ -66,7 +66,7 @@ group :development, :test do
   ################################################################################
   # Manage application processes
   gem "foreman"
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", ">= 4.8.0"
 
   ################################################################################
   # Linters and Security
@@ -98,10 +98,10 @@ group :test  do
   gem "capybara-webkit"
   gem "chromedriver-helper"
   gem "database_cleaner"
-  gem "generator_spec"
+  gem "generator_spec", ">= 0.9.4"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "rspec-rails", "~> 3", ">= 3.6.0"
   gem "rspec-retry"
   gem "selenium-webdriver", "<3.0.0"
 end
