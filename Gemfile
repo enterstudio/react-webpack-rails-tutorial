@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 7.0.0", github: "rails/rails"
 gem "rails"
 gem "listen"
 
@@ -14,7 +14,7 @@ gem "pg"
 gem "puma"
 
 # Use SCSS for stylesheets
-gem "sass-rails"
+gem "sass-rails", ">= 6.0.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
