@@ -2,9 +2,9 @@ source "https://rubygems.org"
 ruby "2.3.1"
 
 #
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+# Bundle edge Rails instead: gem "rails", ">= 7.1.0", github: "rails/rails"
 gem "rails"
-gem "listen"
+gem "listen", ">= 3.2.0"
 
 # Note: We're using sqllite3 for development and testing
 # gem "sqlite3", group: [:development, :test]
@@ -14,11 +14,11 @@ gem "pg"
 gem "puma"
 
 # Use SCSS for stylesheets
-gem "sass-rails"
+gem "sass-rails", ">= 6.0.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/turbolinks/turbolinks
@@ -26,19 +26,19 @@ gem "coffee-rails"
 # gem 'turbolinks', '>= 5.0.0.beta2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder"
+gem "jbuilder", ">= 2.6.4"
 gem 'redis'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", group: :doc
+gem "sdoc", ">= 1.0.0", group: :doc
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
 
 # Use Rails Html Sanitizer for HTML sanitization
-gem "rails-html-sanitizer"
+gem "rails-html-sanitizer", ">= 1.0.4"
 
-gem "react_on_rails", "~> 6.7.1"
+gem "react_on_rails", "~> 6.7.2"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # mini_racer is probably faster than therubyracer
@@ -54,7 +54,7 @@ gem "awesome_print"
 
 group :development do
   # Access an IRB console on exceptions page and /console in development
-  gem "web-console"
+  gem "web-console", ">= 3.5.0"
 end
 
 group :development, :test do
@@ -66,7 +66,7 @@ group :development, :test do
   ################################################################################
   # Manage application processes
   gem "foreman"
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", ">= 4.8.0"
 
   ################################################################################
   # Linters and Security
@@ -80,7 +80,7 @@ group :development, :test do
   ################################################################################
   # Favorite debugging gems
   gem "pry"
-  gem "pry-doc"
+  gem "pry-doc", ">= 0.10.0"
   gem "pry-rails"
   gem "pry-stack_explorer"
   gem "pry-rescue"
@@ -92,16 +92,16 @@ group :development, :test do
 end
 
 group :test  do
-  gem "coveralls", require: false
-  gem "capybara"
-  gem "capybara-screenshot"
-  gem "capybara-webkit"
-  gem "chromedriver-helper"
+  gem "coveralls", ">= 0.8.16", require: false
+  gem "capybara", ">= 2.8.0"
+  gem "capybara-screenshot", ">= 1.0.15"
+  gem "capybara-webkit", ">= 1.12.0"
+  gem "chromedriver-helper", ">= 1.1.0"
   gem "database_cleaner"
-  gem "generator_spec"
+  gem "generator_spec", ">= 0.9.4"
   gem "launchy"
-  gem "poltergeist"
-  gem "rspec-rails", "~> 3"
+  gem "poltergeist", ">= 1.12.0"
+  gem "rspec-rails", "~> 3", ">= 3.6.0"
   gem "rspec-retry"
-  gem "selenium-webdriver", "<3.0.0"
+  gem "selenium-webdriver", "~> 3.0"
 end
